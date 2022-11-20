@@ -1,16 +1,12 @@
 import styled from 'styled-components';
-import data from './data.json';
-
-console.log(data.length);
+import data from '../../data/data.json';
 
 export const SectionStats = styled.section`
-  padding-top: 20px;
   width: 400px;
-  height: auto;
 
   overflow: hidden;
 
-  border: 1px solid black;
+  outline: 1px solid black;
   border-radius: 10px;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -18,17 +14,17 @@ export const SectionStats = styled.section`
 `;
 
 export const StatsTitle = styled.h2`
-  margin-bottom: 20px;
+  display: block;
+  margin: 20px 0px;
   text-align: center;
   text-transform: uppercase;
 `;
 
 export const StatsList = styled.ul`
   display: flex;
-  justify-content: center;
   list-style: none;
 
-  border-top: 1px solid black;
+  outline: 1px solid black;
 `;
 
 export const StatsItem = styled.li`
@@ -37,10 +33,7 @@ export const StatsItem = styled.li`
   flex-flow: column;
   padding: 10px;
   flex-basis: calc(100% / ${data.length});
-
-  &:not(:last-child) {
-    border-right: 1px solid black;
-  }
+  outline: 1px solid black;
 `;
 
 export const StatsLabel = styled.span`
