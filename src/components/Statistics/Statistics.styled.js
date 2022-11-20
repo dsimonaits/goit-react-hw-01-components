@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import data from '../../data/data.json';
 
 export const SectionStats = styled.section`
-  width: 400px;
+  width: 300px;
 
   overflow: hidden;
 
