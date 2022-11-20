@@ -10,7 +10,7 @@ export const Status = styled.span`
 `;
 
 export const Img = styled.img`
-  margin-right: 10px;
+  margin-right: 15px;
 `;
 
 export const Name = styled.p`

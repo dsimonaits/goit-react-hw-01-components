@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const List = styled.ul`
   padding: 10px;
-  width: 300px;
   height: auto;
   display: flex;
   flex-flow: column;
@@ -13,7 +12,7 @@ export const Item = styled.li`
   display: flex;
   justify-content: space-space-around;
   align-items: center;
-  width: 200px;
+  width: ${({ isOnline }) => (isOnline === true ? '250px' : '200px')};
   padding: 10px;
 
   border: 1px solid black;
