@@ -1,7 +1,13 @@
 import styled from 'styled-components';
 
 export const Table = styled.table`
-  width: 300px;
+  @media screen and (max-width: 767px) {
+    width: 300px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 400px;
+  }
 
   border: 1px solid grey;
   border-collapse: collapse;
