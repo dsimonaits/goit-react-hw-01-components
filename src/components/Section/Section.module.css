@@ -1,6 +1,11 @@
 .section {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
   width: 1200px;
   padding: 20px;
+
+  margin: 0 auto;
 }
 
 .title {
