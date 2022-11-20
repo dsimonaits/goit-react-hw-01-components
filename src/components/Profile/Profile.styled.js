@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 
 export const ProfileWrapper = styled.div`
-  /* margin: 0 auto; */
   width: 300px;
   height: auto;
-  border: 1px solid black;
+  outline: 1px solid black;
   border-radius: 10px;
   background-color: #faffdb;
   overflow: hidden;
@@ -15,8 +14,7 @@ export const ProfileWrapper = styled.div`
 `;
 
 export const DescriptionWrapper = styled.div`
-  padding: 10px;
-  margin: 0 auto;
+  padding: 15px;
   display: flex;
   align-items: center;
   flex-flow: column;
@@ -24,20 +22,18 @@ export const DescriptionWrapper = styled.div`
 
 export const Avatar = styled.img`
   width: 80%;
-  border: 1px solid #fff;
   background-color: #fff;
   border-radius: 100%;
 `;
 
 export const Text = styled.p`
-  margin-top: 10px;
+  margin-top: 15px;
   font-weight: ${({ username }) => (username ? '600' : '400')};
 
   font-size: ${({ username }) => (username ? '30px' : '20px')};
 `;
 
 export const StatsList = styled.ul`
-  padding-top: 20px;
   display: flex;
   justify-content: center;
   list-style: none;
@@ -50,14 +46,11 @@ export const StatsItem = styled.li`
   flex-flow: column;
   padding: 5px;
   background-color: #ffffff;
-  border-top: 1px solid black;
-
-  &:not(:last-child) {
-    border-right: 1px solid black;
-  }
+  outline: 1px solid black;
 `;
 
 export const ItemLabel = styled.span`
+  margin-bottom: 5px;
   font-weight: 400;
 `;
 
