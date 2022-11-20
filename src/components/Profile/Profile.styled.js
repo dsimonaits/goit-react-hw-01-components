@@ -8,6 +8,10 @@ export const ProfileWrapper = styled.div`
   border-radius: 10px;
   background-color: #faffdb;
   overflow: hidden;
+
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 `;
 
 export const DescriptionWrapper = styled.div`
