@@ -1,8 +1,12 @@
 import { Section } from './Section/Section';
 import Profile from './Profile/Profile';
-import user from './Profile/user.json';
+import user from '../data/user.json';
 import Statistics from './Statistics/Statistics';
-import data from './Statistics/data.json';
+import data from '../data/data.json';
+import FriendList from './FriendList/FriendList';
+import friends from '../data/friends.json';
+import TransactionHistory from './TransactionHistory/TransactionHistory';
+import transactions from '../data/transactions.json';
 
 export const App = () => {
   return (
@@ -18,6 +22,12 @@ export const App = () => {
       </Section>
       <Section title="Statistics">
         <Statistics title="Upload stats" stats={data} />
+      </Section>
+      <Section title="FriendList">
+        <FriendList friends={friends} />
+      </Section>
+      <Section title="TransactionHistory">
+        <TransactionHistory items={transactions} />
       </Section>
     </>
   );
